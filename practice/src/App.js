@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+function MyButton(){
+  return(
+    <button>I'm a button</button>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +15,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h1>Welcome to my app</h1>
+        <MyButton />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,7 +27,9 @@ function App() {
         </a>
       </header>
     </div>
+    
   );
 }
+
 
 export default App;
