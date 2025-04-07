@@ -3,11 +3,9 @@ import { FC } from "react";
 interface Props {
   items: string[];
   heading: string;
-  // (item: string) => void
-  onSelectItem: (index: number) => void;
 }
 
-const ListGroup: FC<Props> = ({ items, heading, onSelectItem }) => {
+const ListGroups: FC<Props> = ({ items, heading }) => {
 
   return (
     <>
@@ -18,7 +16,6 @@ const ListGroup: FC<Props> = ({ items, heading, onSelectItem }) => {
           <li
             className="list-group-item"
             key={index}
-            onClick={() => onSelectItem(index)}
           >
             {item}
           </li>
@@ -28,4 +25,4 @@ const ListGroup: FC<Props> = ({ items, heading, onSelectItem }) => {
   );
 }
 
-export default ListGroup;
+export default ListGroups;
